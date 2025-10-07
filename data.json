@@ -1,30 +1,16 @@
 ﻿{
-  "meta": {
-    "last_updated": "2025-04-05",
-    "country": "Argentina",
-    "version": "1.1"
-  },
+  "meta": {"last_updated": "2025-04-05", "country": "Argentina", "version": "1.2"},
   "plataformas": [
-    {"nombre":"Tubi","desc":"50k+ títulos, 1080p, anuncios moderados","url":"https://tubitv.com"},
-    {"nombre":"Cine.ar Play","desc":"Cine argentino gratuito, sin anuncios","url":"https://play.cine.ar"},
-    {"nombre":"Pluto TV","desc":"Canales 24/7 de Sci-Fi y Documentales","url":"https://pluto.tv"},
-    {"nombre":"Short of the Week","desc":"Lo mejor del cortometraje global","url":"https://www.shortoftheweek.com"},
-    {"nombre":"Internet Archive","desc":"Películas de dominio público","url":"https://archive.org/details/movies"},
-    {"nombre":"DocAll","desc":"Documentales sociales y ambientales","url":"https://www.docall.tv"}
+    {"nombre":"Tubi","desc":"50k+ títulos, 1080p","url":"https://tubitv.com"},
+    {"nombre":"Cine.ar Play","desc":"Cine argentino gratuito","url":"https://play.cine.ar"}
   ],
   "documentales": [
-    {"titulo":"El camino de Santiago","desc":"Documental sobre Santiago Maldonado","url":"https://play.cine.ar/pelicula/11542-el-camino-de-santiago"},
-    {"titulo":"La grieta","desc":"Desigualdad en Argentina","url":"https://play.cine.ar/pelicula/13210-la-grieta"},
-    {"titulo":"13th","desc":"Racismo y sistema carcelario (EE.UU.)","url":"https://www.youtube.com/watch?v=V66F3WU2CKk"}
+    {"titulo":"El camino de Santiago","desc":"Sobre Santiago Maldonado","url":"https://play.cine.ar/pelicula/11542-el-camino-de-santiago"}
   ],
   "cortos": [
-    {"titulo":"El espantapájaros","desc":"Corto argentino ganador en Mar del Plata","url":"https://play.cine.ar/cortometraje/12980-el-espantapajaros"},
-    {"titulo":"The Present","desc":"Animación sobre discapacidad","url":"https://www.youtube.com/watch?v=QH8q6m5eGzc"},
-    {"titulo":"Wanderers","desc":"Viaje visual por el sistema solar","url":"https://vimeo.com/109040680"}
+    {"titulo":"El espantapájaros","desc":"Corto argentino","url":"https://play.cine.ar/cortometraje/12980-el-espantapajaros"}
   ],
   "scifi": [
-    {"titulo":"Metropolis","desc":"Primera gran obra de ciencia ficción (1927)","url":"https://archive.org/details/metropolis-1927"},
-    {"titulo":"The Day the Earth Stood Still","desc":"Clásico pacifista de los 50s","url":"https://tubitv.com/movies/345678/the-day-the-earth-stood-still"},
-    {"titulo":"Stalker","desc":"Obra maestra filosófica de Tarkovsky","url":"https://archive.org/details/stalker-1979-english-subbed"}
+    {"titulo":"Metropolis","desc":"Clásico de 1927","url":"https://archive.org/details/metropolis-1927"}
   ]
 }

@@ -3,10 +3,9 @@
 <head>
   <meta charset=""UTF-8"" />
   <meta name=""viewport"" content=""width=device-width, initial-scale=1.0, user-scalable=no"" />
-  <meta name=""theme-color"" content=""#121212"" />
   <title>Cine en Casa — Streaming Gratuito en Argentina</title>
   <style>
-    :root { --bg: #0f0f0f; --card-bg: #1e1e1e; --text: #f0f0f0; --accent: #e50914; --hover: #ff1a26; }
+    :root { --bg: #0f0f0f; --card-bg: #1e1e1e; --text: #f0f0f0; --accent: #e50914; }
     * { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
     body { background:var(--bg); color:var(--text); padding:20px; }
     header { text-align:center; margin-bottom:30px; }
@@ -14,7 +13,7 @@
     .nav { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin:20px 0; }
     .nav-btn { background:var(--card-bg); color:var(--text); border:2px solid transparent; padding:10px 20px; border-radius:30px; cursor:pointer; }
     .nav-btn:focus { border-color:var(--accent); outline:none; }
-    .section { display:none; margin-bottom:40px; }
+    .section { display:none; }
     .section.active { display:block; }
     .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px; }
     .card { background:var(--card-bg); border-radius:8px; padding:16px; }
@@ -41,9 +40,7 @@
   <section id=""cortos"" class=""section""><h2>🎞️ Cortos</h2><div class=""grid"" id=""cortos-grid""></div></section>
   <section id=""scifi"" class=""section""><h2>🚀 Sci-Fi</h2><div class=""grid"" id=""scifi-grid""></div></section>
 
-  <footer>
-    <p>Última actualización: <span id=""last-update"">Cargando...</span></p>
-  </footer>
+  <footer><p>Última actualización: <span id=""last-update"">Cargando...</span></p></footer>
 
   <script>
     async function loadData() {
@@ -52,9 +49,7 @@
         const data = await res.json();
         document.getElementById('last-update').textContent = new Date(data.meta.last_updated).toLocaleDateString('es-AR');
         renderAll(data);
-      } catch (e) {
-        console.error('Error al cargar datos');
-      }
+      } catch (e) { console.error('Error'); }
     }
 
     function renderGrid(id, items) {
