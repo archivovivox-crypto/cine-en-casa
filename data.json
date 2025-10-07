@@ -1,0 +1,14 @@
+﻿{
+  "meta": {
+    "last_updated": "2025-04-05",
+    "country": "Argentina",
+    "version": "1.0"
+  },
+  "plataformas": [
+    {
+      "nombre": "Tubi",
+      "desc": "50.000+ títulos gratuitos en Argentina",
+      "url": "https://tubitv.com"
+    }
+  ]
+}
